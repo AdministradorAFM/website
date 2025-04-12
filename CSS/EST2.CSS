@@ -1,0 +1,83 @@
+/*
+ESTILOS APLICADOS PARA EL BANER
+*/
+.banner
+{
+    width: 100%;
+    height: 550px;
+    background-image: url(../IMAGENES/BANNER/baner1.webp);
+    background-position:justify; /* posición de la imagen justificado o centrado*/
+    background-size:cover; /* contenedor del fondo ajustado, utiliza  cuando se hace modulos de repeticióncontain*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffe4c4;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    display: flex;
+}
+.banner::before
+{
+    content: ""; /*contenedor vacio*/
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenidobaner
+{
+    position: relative;
+    z-index: 5; /*profunidad*/
+    max-width: 800px;
+}
+.contenidobaner h1
+{
+    font-size: 28pt;
+    margin-bottom: 10pt;
+    font-weight: bold;
+}
+.contenidobaner p
+{
+    font-size: 16pt;
+}
+.foterinfo
+{
+    background-color: #500310;
+    padding: 20px;
+    height: auto;
+    text-align: justify;
+    display: flex;
+}
+.c_foter 
+{
+    border: 2px solid #ffe4c4;
+    width: 50%;
+    height: auto;
+    margin: 5px 5px;
+    padding: 20px;
+    color: bisque;
+    display: block;
+    text-align: justify;
+    font-family:Arial, sans-serif;
+    font-size: 14pt;
+}
+.c_foter2
+{
+    border: 2px solid bisque;
+    padding: 20px;
+    width: 50%;
+    height: 120px;
+    margin: 5px 5px;
+    background-image: url(../IMAGENES/CABECERA/logo.png);
+    background-position:center; /* posición de la imagen justificado o centrado*/
+    background-size:cover; /* contenedor del fondo ajustado, utiliza  cuando se hace modulos de repeticióncontain*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    display: flex;
+}
